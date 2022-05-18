@@ -12,7 +12,10 @@ const headLine = css`
     font-size: 40px;
     font-weight: 700;
     line-height: 50px;
-    margin: 0 auto;
+    margin: 40px auto;
+    text-align: center;
+    max-width: 670px;
+    width: 100%;
   }
 `;
 
@@ -23,13 +26,6 @@ const iconWrapper = css`
   align-items: center;
   gap: 20px;
 `;
-
-/* const cells = css`
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-`;*/
 
 const icon = css`
   img {

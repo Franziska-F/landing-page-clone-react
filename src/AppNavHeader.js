@@ -3,6 +3,8 @@ import { css } from '@emotion/react';
 
 const navBar = css`
   height: 70px;
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,6 +12,8 @@ const navBar = css`
   padding: 0 32px;
   margin: 8px;
   text-decoration: none;
+  position: fixed;
+  top: 0;
   ul {
     list-style: none;
     margin: 0;
@@ -102,6 +106,10 @@ const headerBtn = css`
   border: none;
 `;
 
+const main = css`
+  margin-top: 80px;
+`;
+
 const headerInput = css`
   height: 64px;
   background-color: #f4f6f8;
@@ -162,7 +170,7 @@ export default function AppNavHeader() {
           <button>Sign up</button>
         </div>
       </nav>
-      <main>
+      <main css={main}>
         <header css={headerStyles}>
           <h1 css={headerTitel}>Make a logo with Looka</h1>
           <p css={headerPara}>

@@ -2,19 +2,28 @@
 import { css } from '@emotion/react';
 
 const wrapper = css`
-  background-color: white;
-
-  text-align: center;
   margin: 0 auto;
-  background-color: #f4f6f8;
-  padding-bottom: 120px;
-`;
+  background-color: #5548f6;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 90px 0 80px 0;
 
-const headerTitel = css`
-  font-weight: 700;
-  margin: 0 auto;
-  font-size: 48px;
-  padding-top: 40px;
+  div {
+    max-width: 500px;
+  }
+
+  h2 {
+    color: white;
+    font-weight: 700;
+    margin: 16px auto;
+    font-size: 40px;
+  }
+  p {
+    font-weight: 400;
+    margin: 0 auto;
+    color: white;
+    max-width: 876px;
+  }
 `;
 
 const headerForm = css`
@@ -26,7 +35,8 @@ const headerForm = css`
 `;
 
 const headerBtn = css`
-  background-color: #5548f6;
+  background-color: black;
+
   color: white;
   height: 64px;
   width: 180px;
@@ -44,7 +54,7 @@ const headerBtn = css`
 `;
 
 const headerInput = css`
-  height: 76px;
+  height: 64px;
   background-color: white;
   width: 440px;
 
@@ -53,18 +63,18 @@ const headerInput = css`
   padding: 16px 24px;
   margin-right: 8px;
 `;
-const headerTrustpilot = css`
-  img {
-    width: 400px;
-  }
-`;
 
 export default function CreateSection() {
   return (
     <div css={wrapper}>
-      <section>
-        <h1 css={headerTitel}>It's fun to make a logo with Looka</h1>
-
+      <div>
+        <h2>Let's make a logo!</h2>
+        <p>
+          In the time it took you to read this, you could have designed a
+          professional logo for your business. See for yourself.
+        </p>
+      </div>
+      <div>
         <form css={headerForm}>
           <label htmlFor="company-name"> </label>
           <input
@@ -72,14 +82,9 @@ export default function CreateSection() {
             id="company-name"
             css={headerInput}
           />
-          <button css={headerBtn}>Let's make a logo</button>
+          <button css={headerBtn}>Get started</button>
         </form>
-        <div css={headerTrustpilot}>
-          <a href="/">
-            <img src="/images/trustpilot.svg" alt="Rating on Trustpilot" />
-          </a>
-        </div>
-      </section>
+      </div>
     </div>
   );
 }

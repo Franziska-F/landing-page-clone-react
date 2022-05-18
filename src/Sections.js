@@ -5,7 +5,7 @@ const sectionGrid = css`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   justify-content: center;
-  margin-top: 160px;
+  margin-top: 110px;
   max-width: 1248px;
 `;
 
@@ -19,8 +19,8 @@ const imgContainer = css`
   padding: 30px;
 `;
 const imgContainerRight = css`
-  grid-column-start: 1;
-  grid-column-end: span 6;
+  grid-column-start: 7;
+  grid-column-end: span 12;
   img {
     max-width: 100%;
     height: auto;
@@ -33,6 +33,7 @@ const textContainer = css`
   grid-column-end: span 12;
   align-items: center;
   margin-top: 40px;
+  padding: 40px;
   h2 {
     font-size: 32px;
     font-weight: 700;
@@ -51,10 +52,11 @@ const textContainer = css`
 `;
 
 const textContainerLeft = css`
-  grid-column-start: 7;
-  grid-column-end: span 12;
+  grid-column-start: 1;
+  grid-column-end: span 6;
   align-items: center;
   margin-top: 40px;
+  padding: 40px;
   h2 {
     font-size: 32px;
     font-weight: 700;
