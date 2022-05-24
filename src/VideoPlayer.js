@@ -60,7 +60,7 @@ export default function VideoPlayer() {
             height="360"
             src="https://www.youtube.com/embed/TfzBl6of-jo?autoplay=1&amp;modestbranding=1&amp;color=white&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Flooka.com&amp;widgetid=1"
             id="widget2"
-            sandbox="allow-scripts"
+            sandbox
           />
         </div>
       </section>
