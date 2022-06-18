@@ -1,12 +1,6 @@
+import { css, Global } from '@emotion/react';
 import React from 'react';
-
 import ReactDOM from 'react-dom/client';
-
-import {
-  css,
-  Global,
-} from '@emotion/react';
-
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
