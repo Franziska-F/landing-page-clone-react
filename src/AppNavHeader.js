@@ -10,7 +10,8 @@ const navBar = css`
   align-items: center;
   box-shadow: 0 5px 20px 0 rgb(11 7 110 / 4%);
   padding: 0 32px;
-  margin: 8px;
+  z-index: 1;
+
   text-decoration: none;
   position: fixed;
   top: 0;

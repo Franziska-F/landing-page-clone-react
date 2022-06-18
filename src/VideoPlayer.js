@@ -1,6 +1,17 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
+const videoSection = css`
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 140px;
+  }
+`;
+
 const playBtn = css`
   align-items: center;
   background-color: #fff;
@@ -35,7 +46,7 @@ const mainImage = css`
 
 export default function VideoPlayer() {
   return (
-    <div>
+    <div css={videoSection}>
       <section>
         <h2>How to use Looka's logo generator</h2>
 
@@ -49,7 +60,7 @@ export default function VideoPlayer() {
           />
         </div>
 
-        <div>
+        {/* } <div>
           <iframe
             data-videoid="TfzBl6of-jo"
             frameBorder="0"
@@ -62,7 +73,7 @@ export default function VideoPlayer() {
             id="widget2"
             sandbox
           />
-        </div>
+  </div> {*/}
       </section>
     </div>
   );

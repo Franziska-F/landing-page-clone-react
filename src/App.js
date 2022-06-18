@@ -20,7 +20,7 @@ function App() {
         <LogoGrid />
         <FinalCreateSection />
       </main>
-      <footer></footer>
+      <footer />
     </>
   );
 }
