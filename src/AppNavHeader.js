@@ -71,6 +71,7 @@ const headerTitel = css`
   font-weight: 700;
   margin: 0 auto;
   font-size: 48px;
+  padding-top: 60px;
 `;
 
 const headerPara = css`
